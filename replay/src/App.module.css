@@ -1,0 +1,209 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0c10;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #e03030;
+  line-height: 1.1;
+}
+
+.sub {
+  font-size: 0.9rem;
+  color: #556070;
+}
+
+.sub code {
+  color: #00c8dc;
+  background: #0e1418;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: inherit;
+}
+
+.pickers {
+  display: flex;
+  gap: 16px;
+}
+
+.picker {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #1e2530;
+  border-left: 3px solid;
+  border-radius: 4px;
+  min-width: 180px;
+  overflow: hidden;
+  background: #0d1015;
+}
+
+.pickerLabel {
+  padding: 10px 14px 4px;
+  font-size: 0.67rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #667788;
+}
+
+.pickerDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.pickerBody {
+  padding: 6px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fileBtn {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid;
+  background: transparent;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  font-family: inherit;
+}
+
+.fileBtn:hover { opacity: 0.7; }
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.sharedTransport {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 10px;
+}
+
+.playBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #f0c020;
+  color: #0a0c10;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: opacity 0.15s;
+  line-height: 1;
+}
+
+.playBtn:hover { opacity: 0.82; }
+
+.syncBtn {
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid #2a3a4a;
+  background: #0d1015;
+  color: #667888;
+  font-size: 0.7rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.syncBtn:hover {
+  color: #aabbcc;
+  border-color: #445060;
+}
+
+.viewer {
+  position: relative;
+  overflow: hidden;
+}
+
+.controls {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.emptySlot {
+  background: #0d1015;
+  border-left: 1px solid #181e26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+}
+
+.emptySlot:first-child {
+  border-left: none;
+}
+
+.emptyInner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emptyLabel {
+  font-size: 0.72rem;
+  color: #3a4050;
+}
+
+.loadBtn {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid #2a3040;
+  color: #556070;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.loadBtn:hover {
+  color: #aabbcc;
+  border-color: #445060;
+}

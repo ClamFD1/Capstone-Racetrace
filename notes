@@ -1,0 +1,15 @@
+
+connect to pi
+ ssh clamd@racetrace.local
+
+upload logger to pi
+scp C:\Users\chloe\OneDrive\Desktop\racetrace\logger\logger.py clamd@racetrace.local:~/racetrace/logger/logger.py
+
+run logger on pi
+sudo python3 ~/racetrace/logger/logger.py --imu-port /dev/ttyACM1 --port /dev/ttyACM0
+
+download sessions from pi
+scp -r clamd@racetrace.local:/boot/firmware/sessions C:\Users\chloe\OneDrive\Desktop\racetrace\data\tsessions
+
+
+
